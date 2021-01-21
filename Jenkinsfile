@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'my-app-1.0-SNAPSHOT.jar, /surefire-reports/*', followSymlinks: false
+                archiveArtifacts artifacts: 'target/my-app-1.0-SNAPSHOT.jar, target/surefire-reports/*', followSymlinks: false
             }
         }
     }
