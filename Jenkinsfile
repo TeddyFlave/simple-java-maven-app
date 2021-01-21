@@ -26,5 +26,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'my-app-1.0-SNAPSHOT.jar  /surefire-reports/*', followSymlinks: false
+            }
+        }
     }
 }
+
