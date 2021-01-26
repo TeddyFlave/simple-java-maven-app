@@ -1,8 +1,5 @@
 # simple-java-maven-app
 
-# Making a change to kick of the pipeline
-
-# Another Change 
 
 This repository is for the
 [Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
