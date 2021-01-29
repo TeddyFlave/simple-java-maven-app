@@ -21,12 +21,12 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
+        stage('Delivery') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
-        stage('Archive') {
+        stage('Archive_Package') {
             steps {
                 archiveArtifacts artifacts: 'target/my-app-1.0-SNAPSHOT.jar, target/surefire-reports/*', followSymlinks: false
             }
